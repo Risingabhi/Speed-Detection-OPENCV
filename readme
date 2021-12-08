@@ -1,0 +1,15 @@
+Program uses OPENCV to do speed detection.
+Sequence to run files :
+1- Put all files in same folder.
+2- IP webcam address can be added in cv2.VideoCapture()
+set_regions.py [to make mask on road ] should be run first.
+run_TDI_Final.py calculates the speed of vehicle on road, USER INPUT required [Speed_Limit,distance, Angle]
+
+1- Can work for all angles with respect to road.
+2- Auto calibrates the detection range basis different speed limits.
+Code has been tested on ground truth videos and is giving very good results.
+
+
+FUTURE IMPROVEMENT:
+A) Adjust crop rate of defaulters.
+B) Integrate with NIGHT TIME DETECTION
