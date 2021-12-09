@@ -2,7 +2,8 @@ Program uses OPENCV to do speed detection.
 Sequence to run files :
 1- Put all files in same folder.
 2- IP webcam address can be added in cv2.VideoCapture()
-set_regions.py [to make mask on road ] should be run first.
+set_regions.py [to make mask on road ] should be run first. IMPORTANT: You need to make 2 masks.
+
 run_TDI_Final.py calculates the speed of vehicle on road, USER INPUT required [Speed_Limit,distance, Angle]
 
 1- Can work for all angles with respect to road.
