@@ -1,13 +1,15 @@
 Program uses OPENCV to do speed detection.
 Sequence to run files :
-1- Put all files in same folder.
-2- IP webcam address can be added in cv2.VideoCapture()
-set_regions.py [to make mask on road ] should be run first. IMPORTANT: You need to make 2 masks.
-
-run_TDI_Final.py calculates the speed of vehicle on road, USER INPUT required [Speed_Limit,distance, Angle]
-
-1- Can work for all angles with respect to road.
-2- Auto calibrates the detection range basis different speed limits.
+1- In this repo the most important step will be arrangement of files in to a single folder 
+line.py, set_regions.py, run_TDI_Final.py with the prompt images 
+2- create a proper environment containing opencv, python 3.8(recommended)and tensorflow 
+3- IP webcam address can be added in cv2.VideoCapture("rtsp....")
+4- After the above steps run first run the set_regions.py file on the env.
+4.(a) creating of masks on the road (2 masks making are required) using required path files to get an output in with name regions.p(default)
+5. Run the final file name run_TDI_Final.py and count the speed of the vehicles.
+5.(a) speed_limit, distance, angle (as input)
+.
+6 - Auto calibrates the detection range basis different speed limits.
 Code has been tested on ground truth videos and is giving very good results.
 
 
